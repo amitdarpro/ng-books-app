@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+H1,
+H2 {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+.the-content {
+  background: #EDF0F0;
+}
+
+.the-pager {
+  background: #EDF0F0;
+  padding-bottom: 40px;
+}
+
+.content-padding-top {
+  padding-top: 30px;
+}
+
+
+/* general */
+
+.buttons-margintop {
+  margin-top: 10px;
+}

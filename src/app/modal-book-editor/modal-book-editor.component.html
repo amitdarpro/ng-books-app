@@ -1,0 +1,17 @@
+<ng-template #contentBookEditor let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">{{ modalTitle }}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <book-form [bookId]='bookItem.id' [bookTitleValue]='bookItem.title | titleCase'
+    [bookAuthorValue]='bookItem.author | titleCase'
+    [bookDateValue]='bookItem.date' [imgSrc]='bookItem.imgSrc'></book-form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="onSaveButton(); c('Close click');" [disabled]="disabledSave">Save</button>
+    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Cancel</button>
+  </div>
+</ng-template>

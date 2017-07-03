@@ -1,0 +1,36 @@
+<form [formGroup]="bookForm">
+  <div class="form-group">
+    <label for="bookTitle">Name</label>
+    <input type="text" formControlName="bookTitle" id="bookTitle" class="form-control">
+    <span
+      *ngIf="!bookForm.get('bookTitle').valid && bookForm.get('bookTitle').dirty"
+      class="help-block">
+      <span *ngIf="bookForm.get('bookTitle').errors['required']">This field is required!</span>
+      <span *ngIf="bookForm.get('bookTitle').errors['spacesChars']">Do not leave empty!</span>
+      <span *ngIf="bookForm.get('bookTitle').errors['forbiddenChars']">Please use English Characters only!</span>
+      <span *ngIf="bookForm.get('bookTitle').errors['duplicatedBook']">The book already exist! Please try again.</span>
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="bookAuthor">Author</label>
+    <input type="text" formControlName="bookAuthor" id="bookAuthor" class="form-control">
+    <span
+      *ngIf="!bookForm.get('bookAuthor').valid && bookForm.get('bookAuthor').dirty"
+      class="help-block">
+      <span *ngIf="bookForm.get('bookAuthor').errors['required']">This field is required!</span>
+      <span *ngIf="bookForm.get('bookAuthor').errors['spacesChars']">Do not leave empty!</span>
+      <span *ngIf="bookForm.get('bookAuthor').errors['forbiddenChars']">Please use English Characters only!</span>
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="bookDate">Published</label>
+    <input type="text" formControlName="bookDate" id="bookDate" class="form-control" placeholder="mm/dd/yy">
+    <span
+      *ngIf="!bookForm.get('bookDate').valid && bookForm.get('bookDate').dirty"
+      class="help-block">
+      <span *ngIf="bookForm.get('bookDate').errors['required']">This field is required!</span>
+      <span *ngIf="bookForm.get('bookDate').errors['spacesChars']">Do not leave empty!</span>
+      <span *ngIf="bookForm.get('bookDate').errors['forbiddenDate']">Please use a valid date in pattern of mm/dd/yyyyy.</span>
+    </span>   
+  </div>
+</form>

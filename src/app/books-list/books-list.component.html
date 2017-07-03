@@ -1,0 +1,43 @@
+<div class="row the-content content-padding-top">
+  <div class="col-sm-8 text-center">
+    <div><h2>Your Library books' list</h2><strong>You can Edit, Delete or Add a new book.</strong></div>
+    <ng-template #emptymessage><div><h2>Your Library is currently empty</h2><strong>Start adding new books</strong></div></ng-template>
+  </div>
+  <div class="col-sm-4">
+    <button type="button" class="btn btn-primary" (click)="onAddButton()" style="margin-top: 15px;">Add New Book</button>
+  </div>
+</div>
+<div class="row text-center the-pager">
+  <div class="col text-center">
+    <hr>
+  </div>
+</div>   
+<div class="row the-content">
+  <div class="col-sm-6" *ngFor="let bookItem of pagedBooksItems; let i = index;">
+    <app-book [imagesRootSrc]='imagesRootSrc' [bookItem]='bookItem' [bookIndex]='getBookItemIndex(i)'></app-book>
+  </div>
+</div>
+<div class="row text-center the-pager">
+  <div class="col text-center">
+    <hr>
+    <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+      <li class="page-item" [ngClass]="{disabled:pager.currentPage === 1}">
+        <a class="page-link" (click)="setPage(1)">First</a>
+      </li>
+      <li class="page-item" [ngClass]="{disabled:pager.currentPage === 1}">
+        <a class="page-link" (click)="setPage(pager.currentPage - 1)">Previous</a>
+      </li>
+      <li class="page-item" *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+        <a class="page-link" (click)="setPage(page)">{{page}}</a>
+      </li>
+      <li class="page-item" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+        <a class="page-link" (click)="setPage(pager.currentPage + 1)">Next</a>
+      </li>
+      <li class="page-item" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+        <a class="page-link" (click)="setPage(pager.totalPages)">Last</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<modal-book-editor></modal-book-editor>
+<modal-book-delete></modal-book-delete>

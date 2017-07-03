@@ -1,0 +1,47 @@
+.root-container {
+  margin: 0px auto;
+  max-width: 790px;
+}
+
+.the-header {
+  background: #5A7883;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 4px #FFEB3B solid;
+}
+
+.the-footer {
+  background: #5A7883;
+  padding: 20px 0;
+  border-radius: 0 0 8px 8px;
+}
+
+.the-footer p {
+  font-size: 13px;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  padding-top: 10px;
+}
+
+.the-footer p .fa {
+  font-size: 21px;
+}
+
+.the-footer a, a:hover {
+  color: #fff;
+}
+
+h1 {
+  color: #FFBB3B;
+}
+
+.quote {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  padding-top: 8px;
+  letter-spacing: 0.6px;
+  line-height: 1.3em;
+}

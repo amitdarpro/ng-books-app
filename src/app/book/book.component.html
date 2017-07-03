@@ -1,0 +1,16 @@
+<div class="row book-box">
+  <div class="col-sm-4">
+    <img src="{{ imagesRootSrc+bookItem.imgSrc }}" border="" class="book-cover">
+  </div>
+  <div class="col-sm-8">
+    <strong>{{ bookItem.title | titleCase }}</strong>
+    <br>
+    {{ bookItem.author | titleCase | prependLabel: 'By: ' }}
+    <br>  
+    {{ bookItem.date | prependLabel: 'Published: ' }}
+    <p class="buttons-margintop">
+      <button type="button" class="btn btn-primary btn-sm" (click)="onEditButton()">Edit</button>
+      <button type="button" class="btn btn-danger btn-sm" (click)="onDeleteButton()">Delete</button>
+    </p>
+  </div>
+</div>
