@@ -1,7 +1,7 @@
 <div class="row the-content content-padding-top">
   <div class="col-sm-8 text-center">
-    <div><h2>Your Library books' list</h2><strong>You can Edit, Delete or Add a new book.</strong></div>
-    <ng-template #emptymessage><div><h2>Your Library is currently empty</h2><strong>Start adding new books</strong></div></ng-template>
+    <div *ngIf="this.allBooksItems && this.allBooksItems.length > 0; else emptymessage"><h2>Your Library books' list</h2><strong>You can Edit, Delete or Add a new book.</strong></div>
+    <ng-template #emptymessage><h2>Your Library is currently empty</h2><strong>Start adding new books</strong></ng-template>
   </div>
   <div class="col-sm-4">
     <button type="button" class="btn btn-primary" (click)="onAddButton()" style="margin-top: 15px;">Add New Book</button>

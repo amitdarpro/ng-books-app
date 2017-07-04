@@ -35,7 +35,6 @@ export class BookFormComponent implements OnInit {
 
     this.bookForm.statusChanges.subscribe(
       (status) => {
-        console.log(status);
         if (status === "VALID") {
           var equalTitle = this.bookValidatorService.isEqual(this.bookForm.get('bookTitle').value, this.bookTitleValue);
           var equalAuthor = this.bookValidatorService.isEqual(this.bookForm.get('bookAuthor').value, this.bookAuthorValue);

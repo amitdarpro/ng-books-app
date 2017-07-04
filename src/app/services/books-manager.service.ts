@@ -50,7 +50,6 @@ export class BooksManagerService {
   }
 
   updateBookAction(bookItem: Book): void {
-    console.log(bookItem);
     for (let element of this.allBooksItems) {
       if (element.id === bookItem.id) {
         element.title = bookItem.title;

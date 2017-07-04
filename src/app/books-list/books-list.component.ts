@@ -81,6 +81,11 @@ export class BooksListComponent implements OnInit, OnDestroy {
   }
 
   setPage(page: number) {
+    if (!this.allBooksItems || this.allBooksItems.length === 0) {
+      this.pagedBooksItems = this.allBooksItems;
+      this.pager = {}
+      return;
+    }
     if (page < 1 || page > this.pager.totalPages) {
       return;
     }
