@@ -5,5 +5,89 @@
           "title": "   @1beauty    belongs  to  the _flowers",
           "author": "matthew Sanborn smith",
           "date": "3/20/2001"
-      }
+      },
+      {
+          "id": 12,
+          "imgSrc": "divergent.jpg",
+          "title": "divergent",
+          "author": "veronica roth",
+          "date": "1/17/1980"
+      },
+      {
+          "id": 11,
+          "imgSrc": "life_of_pi.jpg",
+          "title": "life of pi",
+          "author": "yann martel",
+          "date": "8/29/1955"
+      },
+      {
+          "id": 10,
+          "imgSrc": "magnus_chase.jpg",
+          "title": "magnus chase",
+          "author": "rick riordan",
+          "date": "5/17/1991"
+      },
+      {
+          "id": 9,
+          "imgSrc": "sister_carrie.jpg",
+          "title": "sister carrie",
+          "author": "theodor drieser",
+          "date": "3/20/2001"
+      },
+      {
+          "id": 8,
+          "imgSrc": "tanya_anne_crosby.jpg",
+          "title": "the mackinnos bride",
+          "author": "tanya anne crosby",
+          "date": "11/14/2007"
+      },
+      {
+          "id": 7,
+          "imgSrc": "teaching_youth_to_love_soccer.jpg",
+          "title": "teaching youth to love soccer",
+          "author": "coach mark",
+          "date": "4/8/2011"
+      },
+      {
+          "id": 6,
+          "imgSrc": "the_bone_house.jpg",
+          "title": "the bobe house",
+          "author": "stephen r lawhead",
+          "date": "9/9/1999"
+      },
+      {
+          "id": 5,
+          "imgSrc": "the_collector.jpg",
+          "title": "the collector",
+          "author": "john fowls",
+          "date": "2/16/1995"
+      },
+      {
+          "id": 4,
+          "imgSrc": "the_gifts.jpg",
+          "title": "the gifts",
+          "author": "patria duan rowe",
+          "date": "2/16/1995"
+      },
+      {
+          "id": 3,
+          "imgSrc": "tigerse_curse.jpg",
+          "title": "tigerse curse",
+          "author": "colleen houck",
+          "date": "7/11/1977"
+      },
+      {
+          "id": 2,
+          "imgSrc": "voltar.jpg",
+          "title": "voltar",
+          "author": "alfredo p alcalas",
+          "date": "6/22/1967"
+      },
+      {
+          "id": 1,
+          "imgSrc": "whisper.jpg",
+          "title": "whisper",
+          "author": "thomas wilson",
+          "date": "5/25/1982"
+      }                                   
 ]
